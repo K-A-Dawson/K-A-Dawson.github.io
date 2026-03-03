@@ -1,80 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Resume</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Kyla Dawson</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="hero">
-    <div class="container">
-        <img src="your-photo.jpg" alt="Your Name">
-        <h1>Your Name</h1>
-        <p class="subtitle">Student, Developer & Designer</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
-</header>
+<!-- HERO IMAGE SECTION -->
+<section class="hero">
 
-<main class="container">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write a short intro about yourself here.</p>
-    </section>
+  <!-- Background Image -->
+  <img src="assets/hero-image.jpg" alt="Desk with ocean view" class="hero-img">
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Rust</li>
-        </ul>
-    </section>
+  <!-- Interactive Overlay -->
+  <svg class="overlay" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="grid">
-            <!-- Repeat this block for each project -->
-            <div class="project-card">
-                <h3>Project Title</h3>
-                <p>Short description of the project and technologies used.</p>
-                <a href="https://github.com/yourusername/project" target="_blank">View on GitHub</a>
-            </div>
-            <!-- /Project -->
-        </div>
-    </section>
+    <!-- Laptop Hotspot -->
+    <a href="projects.html">
+      <rect x="520" y="500" width="400" height="250"
+        class="hotspot"/>
+    </a>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Role Title</h3>
-            <p class="time">Month Year — Present</p>
-            <p>Summary of what you did in this role.</p>
-        </div>
-    </section>
+    <!-- Boat Hotspot -->
+    <a href="about.html">
+      <circle cx="1000" cy="350" r="60"
+        class="hotspot"/>
+    </a>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        <p>Links: 
-            <a href="https://github.com/yourusername">GitHub</a>, 
-            <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
-        </p>
-    </section>
-</main>
+  </svg>
 
-<footer>
-    <p>&copy; Your Name — Built with HTML & CSS</p>
-</footer>
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    ↓ Scroll
+  </div>
+
+</section>
+
+
+<!-- SKILLS SECTION -->
+<section class="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>React</div>
+    <div>UI/UX</div>
+    <div>Figma</div>
+    <div>Product Strategy</div>
+    <div>Project Management</div>
+  </div>
+</section>
 
 </body>
 </html>
