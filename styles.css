@@ -30,7 +30,7 @@ body {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  object-position: center 65%;
+  object-position: center 90%;
   z-index: 1;
 }
 
@@ -85,7 +85,7 @@ body {
 }
 
 .skills-grid div {
-  background: white;
+  background: black;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
